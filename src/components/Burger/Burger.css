@@ -1,0 +1,74 @@
+.burger-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2000;
+  background: rgb(33, 40, 48);
+  border: 1px solid #ffffff29;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.burger-btn:hover {
+  background: #d083a1ca;
+  color: #0a0a0a;
+}
+
+/* Overlay */
+.menu-overlay {
+  position: fixed;
+  top: 4rem;
+  right: 1rem;
+  min-width: 160px;
+  height: 265px;
+  background: rgb(33, 40, 48);
+  border: 1px solid #ffffff29;
+  z-index: 1500;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.menu-link {
+  font-size: 1rem;
+  color: #D083A0;
+  font-weight: 600;
+  padding: 10px 15px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  /* transition: background-color 0.2s; */
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.menu-overlay.open .menu-link {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.menu-link:hover {
+  background-color: #ffffff10;
+}
