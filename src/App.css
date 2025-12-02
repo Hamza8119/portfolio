@@ -22,21 +22,8 @@ body {
   overflow-x: hidden;
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 /* --- Light Mode Variables --- */
 body.light-mode {
   background-color: #f8fafc;
   color: #1e293b;
 }
-
-/* body.light-mode .section-title, 
-body.light-mode h1, 
-body.light-mode h2, 
-body.light-mode h3 {
-  color: #0f172a;
-} */
