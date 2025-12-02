@@ -8,7 +8,7 @@ import Burger from './components/Burger/Burger';
 // Pages
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
-import Skills from './pages/Skills/Skills';
+// import Skills from './pages/Skills/Skills';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,7 +22,7 @@ function App() {
           <Burger />
           <Home />
           <About />
-          <Skills />
+          {/* <Skills /> */}
           <Dock />
         </div>
       )}
