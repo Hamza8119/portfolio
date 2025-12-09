@@ -1,13 +1,10 @@
 # 🚀 Ilyas Lhouari | Professional Portfolio
 
 <div align="center">
-  <img src="public/lilyass.jpg" alt="Ilyas Lhouari" width="140" height="140" style="border-radius: 50%; border: 4px solid #D083A0; box-shadow: 0 0 20px rgba(208, 131, 160, 0.5);" />
-  <br/><br/>
-  
-  <h1>Hi, I'm <span style="color: #D083A0;">Ilyas Lhouari</span> 👋</h1>
-  <h3>Full Stack Developer</h3>
 
-  <a href="https://ilyaslhouari.netlify.app/"><strong>➥ View Live Demo</strong></a>
+  <img src="public/Macbook-Air.png" alt="Ilyas Lhouari"/>
+  <br/><br/>
+  <a href="https://ilyaslhouari.netlify.app/" target="_blank"><strong>ilyaslhouari.com</strong></a>
   <br/><br/>
 
   ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
