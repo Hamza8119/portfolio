@@ -5,6 +5,7 @@ import './App.css';
 import Preloader from './components/loading/Preloader';
 import Dock from './components/Dock/Dock';
 import Burger from './components/Burger/Burger';
+import Footer from './components/Footer/Footer';
 // Pages
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
@@ -27,6 +28,7 @@ function App() {
           <Skills />
           <Education />
           <Project />
+          <Footer />
           <Dock />
         </div>
       )}
