@@ -2,9 +2,9 @@ import React from "react";
 import { Github, ExternalLink } from "lucide-react";
 import "./Projects.css";
 
-import clickShopImg from "../../assets/Projects/clickshop.png";
+
 import portfolioImg from "../../assets/Projects/portfolio.png";
-import movieAppImg from "../../assets/Projects/movie.png";
+
 import DarDigitalImg from "../../assets/Projects/dardigital.png";
 import BCH from "../../assets/Projects/bch.png";
 import CerRental from "../../assets/Projects/CerRental.png";
