@@ -5,6 +5,11 @@ import "./Projects.css";
 import clickShopImg from "../../assets/Projects/clickshop.png";
 import portfolioImg from "../../assets/Projects/portfolio.png";
 import movieAppImg from "../../assets/Projects/movie.png";
+import DarDigitalImg from "../../assets/Projects/dardigital.png";
+import BCH from "../../assets/Projects/bch.png";
+import CerRental from "../../assets/Projects/CerRental.png";
+import ElectroTurbo from "../../assets/Projects/électrisité.png";
+import ecom from "../../assets/Projects/ecom.png";
 
 function Projects() {
   const projects = [
@@ -19,7 +24,7 @@ function Projects() {
         {
       title: "ADM Car - Location de Voitures",
       desc: "A car rental platform that allows users to browse, book, and manage car rentals online. Includes a login system and admin dashboard for managing bookings.",
-      img: "", // ضع رابط الصورة هنا إذا عندك
+      img: CerRental, // ضع رابط الصورة هنا إذا عندك
       tags: ["Vue.js", "Vite", "CSS3", "Firebase"],
       github: "https://github.com/Hamza8119/ADM-CAR-LE-CATION-DE-VOITURE",
       demo: "https://admcar.netlify.app/login",
@@ -27,7 +32,7 @@ function Projects() {
         {
       title: "ElectroTurbo",
       desc: "An electricity services platform providing solutions and consultations online. Users can explore services and contact providers directly.",
-      img: "", // ضع رابط الصورة هنا
+      img: ElectroTurbo, // ضع رابط الصورة هنا
       tags: ["HTML5", "CSS3", "JavaScript"],
       github: "https://github.com/Hamza8119/electricit-",
       demo: "https://electroturbo.netlify.app",
@@ -43,7 +48,7 @@ function Projects() {
         {
       title: "BCH - E-commerce",
       desc: "Another e-commerce platform demonstrating advanced product management and user experience design.",
-      img: "", // ضع رابط الصورة هنا
+      img: BCH, // ضع رابط الصورة هنا
       tags: ["Vue.js", "CSS3", "API"],
       github: "https://github.com/chaimabidqui/BCH",
       demo: "",
@@ -51,7 +56,7 @@ function Projects() {
         {
       title: "Dar Digital Agency - Centre Project",
       desc: "A showcase website for Dar Digital Agency, highlighting services, team, and portfolio. Built to demonstrate modern web design practices.",
-      img: "", // ضع رابط الصورة هنا
+      img: DarDigitalImg, // ضع رابط الصورة هنا
       tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
       github: "https://github.com/DAR-DIGITAL/DarDigitalAgency",
       demo: "",
