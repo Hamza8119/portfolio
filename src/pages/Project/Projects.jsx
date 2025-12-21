@@ -9,18 +9,11 @@ import DarDigitalImg from "../../assets/Projects/dardigital.png";
 import BCH from "../../assets/Projects/bch.png";
 import CerRental from "../../assets/Projects/CerRental.png";
 import ElectroTurbo from "../../assets/Projects/électrisité.png";
-import ecom from "../../assets/Projects/ecom.png";
+import ecom from "../../assets/Projects/ecom.jpeg";
 
 function Projects() {
   const projects = [
-    {
-      title: "Click Shop",
-      desc: "A specialized Cash on Delivery (COD) e-commerce platform built for the Moroccan market. It features a serverless architecture using Google Sheets for real-time order management and integrates advanced Facebook Pixel events for ad optimization.",
-      img: clickShopImg,
-      tags: ["React", "Vite", "Google Sheets API", "Facebook Pixel"],
-      github: "https://github.com/IlyassLho/E-com-Store",
-      demo: "https://click-shop.ma",
-    },
+  
         {
       title: "ADM Car - Location de Voitures",
       desc: "A car rental platform that allows users to browse, book, and manage car rentals online. Includes a login system and admin dashboard for managing bookings.",
@@ -40,7 +33,7 @@ function Projects() {
        {
       title: "E-commerce Project",
       desc: "An online store project showcasing product listings, cart functionality, and checkout process. Built to demonstrate full-stack e-commerce capabilities.",
-      img: "", // ضع رابط الصورة هنا
+      img: ecom, // ضع رابط الصورة هنا
       tags: ["Vue.js", "CSS3", "API", "Vite"],
       github: "https://github.com/Hamza8119/ecommerce",
       demo: "",
@@ -69,14 +62,7 @@ function Projects() {
       github: "https://github.com/IlyassLho/portfolio",
       demo: "https://ilyaslhouari.netlify.app/",
     },
-    {
-      title: "Ily Flicks - TMDB Client",
-      desc: "An interactive movie discovery application that allows users to search for movies, view details, ratings, using the TMDB API.",
-      img: movieAppImg,
-      tags: ["React.js", "TMDB API", "Axios", "CSS3"],
-      github: "https://github.com/IlyassLho/movie-app",
-      demo: "",
-    },
+
   ];
 
   return (
