@@ -16,6 +16,46 @@ function Projects() {
       github: "https://github.com/IlyassLho/E-com-Store",
       demo: "https://click-shop.ma",
     },
+        {
+      title: "ADM Car - Location de Voitures",
+      desc: "A car rental platform that allows users to browse, book, and manage car rentals online. Includes a login system and admin dashboard for managing bookings.",
+      img: "", // ضع رابط الصورة هنا إذا عندك
+      tags: ["Vue.js", "Vite", "CSS3", "Firebase"],
+      github: "https://github.com/Hamza8119/ADM-CAR-LE-CATION-DE-VOITURE",
+      demo: "https://admcar.netlify.app/login",
+    },
+        {
+      title: "ElectroTurbo",
+      desc: "An electricity services platform providing solutions and consultations online. Users can explore services and contact providers directly.",
+      img: "", // ضع رابط الصورة هنا
+      tags: ["HTML5", "CSS3", "JavaScript"],
+      github: "https://github.com/Hamza8119/electricit-",
+      demo: "https://electroturbo.netlify.app",
+    },
+       {
+      title: "E-commerce Project",
+      desc: "An online store project showcasing product listings, cart functionality, and checkout process. Built to demonstrate full-stack e-commerce capabilities.",
+      img: "", // ضع رابط الصورة هنا
+      tags: ["Vue.js", "CSS3", "API", "Vite"],
+      github: "https://github.com/Hamza8119/ecommerce",
+      demo: "",
+    },
+        {
+      title: "BCH - E-commerce",
+      desc: "Another e-commerce platform demonstrating advanced product management and user experience design.",
+      img: "", // ضع رابط الصورة هنا
+      tags: ["Vue.js", "CSS3", "API"],
+      github: "https://github.com/chaimabidqui/BCH",
+      demo: "",
+    },
+        {
+      title: "Dar Digital Agency - Centre Project",
+      desc: "A showcase website for Dar Digital Agency, highlighting services, team, and portfolio. Built to demonstrate modern web design practices.",
+      img: "", // ضع رابط الصورة هنا
+      tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+      github: "https://github.com/DAR-DIGITAL/DarDigitalAgency",
+      demo: "",
+    },
     {
       title: "My Portfolio",
       desc: "My personal professional portfolio website to showcase my skills, experience, and projects. Designed with a clean, responsive UI using the latest web technologies.",

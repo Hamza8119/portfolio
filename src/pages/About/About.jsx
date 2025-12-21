@@ -11,7 +11,7 @@ function About() {
         <div className="about-image-wrapper">
           <Tilt tiltMaxAngleX={35} tiltMaxAngleY={35} scale={1.1} transitionSpeed={450} className="tilt-box">
             <div className="img-card">
-              <img src="/lilyass.jpg" alt="Ilyas Lhouari" className="about-img" />
+              <img src="/hamza.jpeg" alt="Hamza Ibourk" className="about-img" />
             </div>
           </Tilt>
         </div>
@@ -23,9 +23,14 @@ function About() {
           </h2>
 
           <p className="intro-text">
-            I'm <span className="text-primary">Ilyas</span>, a resilient Junior Full Stack Developer and recent <strong>OFPPT (DTS)</strong> graduate, with strong expertise in backend development.
-            As a proud member of <strong>1337 Coding School (42 Network)</strong>, I combine academic rigor with an intensive, problem-solving mindset. Proven to adapt and collaborate in high-pressure environments, I am driven by algorithmic thinking and a passion for exploring cutting-edge technologies to deliver impactful digital solutions.
+            I'm <span className="text-primary">Hamza</span>, a motivated Junior Full Stack Developer with a diverse and hands-on learning journey.
+            I completed a <strong>3-month Front-End training</strong> at <strong>Big Academy</strong>, followed by a <strong>6-month Full Stack Developer program</strong> at <strong>Dar Digital</strong>.
+            I also trained at <strong>Orange Digital Center</strong> in <strong>Java, Figma, and Databases</strong>.
+            Currently, I am studying <strong>Digital Development</strong> at <strong>OFPPT</strong>, and I have completed <strong>one year at university</strong> in <strong>Accounting, Finance, and Taxation</strong>.
+            In parallel, I studied <strong>English for 6 months</strong>.
+            This multidisciplinary background allows me to blend technical development skills with analytical and business-oriented thinking to build efficient and impactful digital solutions.
           </p>
+
         </div>
       </div>
     </section>

@@ -13,7 +13,7 @@ function Home() {
                     </div>
 
                     <h2 className="greeting">
-                        Hi, I'm Ilyas <span className="wave">👋🏻</span>
+                        Hi, I'm HAMZA <span className="wave">👋🏻</span>
                     </h2>
 
                     <Sparkles minSize={30} maxSize={70}>

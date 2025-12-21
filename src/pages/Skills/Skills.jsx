@@ -1,5 +1,7 @@
 import React from "react";
 import { DiMongodb, DiVisualstudio } from "react-icons/di";
+import { SiFigma, SiTailwindcss, SiVuedotjs } from "react-icons/si";
+
 import {
     SiGithub,
     SiJavascript,
@@ -33,6 +35,10 @@ function Skills() {
         { name: "MySQL", icon: <SiMysql /> },
         { name: "GitHub", icon: <SiGithub /> },
         { name: "MongoDB", icon: <DiMongodb /> },
+        { name: "Figma", icon: <SiFigma /> },
+        { name: "Vue.js", icon: <SiVuedotjs /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+
     ];
     const tools = [
         { name: "VS Code", icon: <DiVisualstudio /> },

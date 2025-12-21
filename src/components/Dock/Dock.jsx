@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Github, Linkedin, Mail, Sun, Moon } from 'lucide-react';
+import { Github, Linkedin, Mail, Sun, Moon , Instagram} from 'lucide-react';
 import './Dock.css';
 
 const Dock = () => {
@@ -16,20 +16,26 @@ const Dock = () => {
       id: "github",
       icon: <Github size={22} />,
       label: "GitHub",
-      url: "https://github.com/IlyassLho"
+      url: "https://github.com/Hamza8119"
     },
     {
       id: "linkedin",
       icon: <Linkedin size={22} />,
       label: "LinkedIn",
-      url: "https://www.linkedin.com/in/ilyas-lhouari-2001a01b01c/"
+      url: "https://www.linkedin.com/in/hamza-ibourk-b8569833a/"
     },
     {
       id: "email",
       icon: <Mail size={22} />,
       label: "Email",
-      url: "mailto:ilyasslhouari@gmail.com"
+      url: "mailto:hamzaibourk2005@gmail.com"
     },
+     {
+    id: "instagram",
+    icon: <Instagram size={22} />,
+    label: "Instagram",
+    url: "https://www.instagram.com/code_.vin?igsh=MXhqaWp5YXMwN2d1bQ%3D%3D&utm_source=qr"
+  },
   ];
 
   return (

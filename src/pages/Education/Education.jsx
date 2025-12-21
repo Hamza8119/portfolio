@@ -5,21 +5,41 @@ import "./Education.css";
 
 function Education() {
   const educationData = [
+  {
+    year: "2024 - 2026",
+    title: "Digital Development (DTS)",
+    school: "Higher Institute of Applied Technology (OFPPT / ISTA) - Agadir",
+  },
+  {
+    year: "2025",
+    title: "Workshops: Figma (1 Day) & Java (2 Days)",
+    school: "Orange Digital Center",
+  },
+  {
+    year: "2024",
+    title: "Full Stack Web Development (6 Months)",
+    school: "Dar Digital",
+  },
+  {
+    year: "2023",
+    title: "Front-End Web Development (3 Months)",
+    school: "Big Academy",
+  },
+  {
+    year: "2023",
+    title: "English Language Training (6 Months)",
+    school: "English Institute",
+  },
     {
-      year: "2026 - Now",
-      title: "Computer science",
-      school: "1337 Coding School (42 NETWORK) - Khouribga",
-    },
-    {
-      year: "2024 - 2026",
-      title: "Digital Development (DTS)",
-      school: "Higher Institute of Applied Technology (OFPPT/ISTA) - Agadir",
-    },
-    {
-      year: "2024",
-      title: "BACCALAURÉAT SCIENCES PHYSIQUES",
-      school: "Mohamed Derfoufi High School - Agadir",
-    },
+    year: "2023 - 2024",
+    title: "Bachelor Studies: Accounting, Finance & Taxation",
+    school: "Ibn Zohr University - Agadir",
+  },
+  {
+    year: "2023",
+    title: "Baccalauréat – Physical Sciences",
+    school: "High School - Tata",
+  },
   ];
 
   return (

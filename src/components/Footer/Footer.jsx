@@ -14,11 +14,29 @@ function Footer() {
             <h1 className="footer-main-title">Get In Touch</h1>
           </Sparkles>
         </div>
-        
-        <p className="contact-text">
-          Have questions? Ping me with a <a href="https://linkedin.com/in/ilyas-lhouari/" target="_blank" rel="noreferrer" className="highlight-link">LinkedIn</a> DM 
-          or email at <a href="mailto:ilyasslhouari@gmail.com" className="highlight-link">ilyasslhouari@gmail.com</a>.
-        </p>
+    <p className="contact-text">
+  Have questions? Ping me with a <a 
+    href="https://www.linkedin.com/in/hamza-ibourk-b8569833a/" 
+    target="_blank" 
+    rel="noreferrer" 
+    className="highlight-link"
+  >
+    LinkedIn
+  </a> DM, email at <a 
+    href="mailto:hamzaibourk2005@gmail.com" 
+    className="highlight-link"
+  >
+    hamzaibourk2005@gmail.com
+  </a>, or check my <a 
+    href="https://www.instagram.com/sophisticated__decor/" 
+    target="_blank" 
+    rel="noreferrer" 
+    className="highlight-link"
+  >
+    Instagram
+  </a>.
+</p>
+
       </div>
 
     </section>
