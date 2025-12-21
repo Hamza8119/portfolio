@@ -6,7 +6,7 @@ import "./Projects.css";
 import portfolioImg from "../../assets/Projects/portfolio.png";
 
 import DarDigitalImg from "../../assets/Projects/DarDigital.png";
-import BCH from "../../assets/Projects/bch.png";
+import BCH from "../../assets/Projects/BCH.png";
 import CerRental from "../../assets/Projects/CerRental.png";
 import ElectroTurbo from "../../assets/Projects/électrisité.png";
 import ecom from "../../assets/Projects/ecom.jpeg";
