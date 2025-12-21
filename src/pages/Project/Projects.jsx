@@ -42,7 +42,7 @@ function Projects() {
       title: "BCH - E-commerce",
       desc: "Another e-commerce platform demonstrating advanced product management and user experience design.",
       img: BCH, // ضع رابط الصورة هنا
-      tags: ["Vue.js", "CSS3", "API"],
+      tags: ["Vue.js", "CSS3", "API" ,"Tailwind CSS","Laravel" ,"MySQL"],
       github: "https://github.com/chaimabidqui/BCH",
       demo: "",
     },
@@ -50,7 +50,7 @@ function Projects() {
       title: "Dar Digital Agency - Centre Project",
       desc: "A showcase website for Dar Digital Agency, highlighting services, team, and portfolio. Built to demonstrate modern web design practices.",
       img: DarDigitalImg, // ضع رابط الصورة هنا
-      tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+      tags: ["Vue.js", "CSS", "JavaScript", "Responsive Design" ,"Tailwind CSS"],
       github: "https://github.com/DAR-DIGITAL/DarDigitalAgency",
       demo: "",
     },
@@ -59,8 +59,8 @@ function Projects() {
       desc: "My personal professional portfolio website to showcase my skills, experience, and projects. Designed with a clean, responsive UI using the latest web technologies.",
       img: portfolioImg,
       tags: ["React.js", "Vite", "Tailwind CSS", "Framer Motion"],
-      github: "https://github.com/IlyassLho/portfolio",
-      demo: "https://ilyaslhouari.netlify.app/",
+      github: "https://github.com/Hamza8119/portfolio",
+      demo: "https://hamzaibourk2.netlify.app/",
     },
 
   ];
