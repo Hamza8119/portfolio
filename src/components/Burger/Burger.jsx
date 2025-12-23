@@ -13,7 +13,9 @@ const Burger = () => {
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
     { name: "Education", href: "#education" },
+    { name: "Experience", href: "#experience" },
     { name: "Certificate", href: "#certificate" },
+
   ];
 
   return (

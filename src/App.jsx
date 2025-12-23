@@ -11,6 +11,7 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Skills from './pages/Skills/Skills';
 import Education from './pages/Education/Education';
+import Experience from './pages/Experience/Experience';
 import Project from './pages/Project/Projects';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <About />
           <Skills />
           <Education />
+          <Experience />
           <Project />
           <Footer />
           <Dock />

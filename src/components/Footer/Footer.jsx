@@ -6,7 +6,7 @@ function Footer() {
   return (
     <section className="footer-section">
 
-      <h2 className="footer-mini-title">Contact</h2>
+      <h2 className="footer-mini-title"><span>C</span>ontact</h2>
 
       <div className="footer-content-center">
         <div className="heading-center">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Github, Linkedin, Mail, Sun, Moon , Instagram} from 'lucide-react';
+import { Github, Linkedin, Mail, Sun, Moon , Instagram  , Briefcase } from 'lucide-react';
 import './Dock.css';
 
 const Dock = () => {
@@ -36,6 +36,14 @@ const Dock = () => {
     label: "Instagram",
     url: "https://www.instagram.com/code_.vin?igsh=MXhqaWp5YXMwN2d1bQ%3D%3D&utm_source=qr"
   },
+ 
+    {
+      id: "behance",
+      icon: <Briefcase size={22} />,
+      label: "Behance",
+      url: "https://www.behance.net/hamzaibourk1"
+    },
+
   ];
 
   return (
