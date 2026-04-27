@@ -1,5 +1,6 @@
 .projects-section {
   padding: 80px 20px;
+  background: linear-gradient(-20deg,#000000,#82c3ec20,#000000 );
 }
 
 .projects-container {
@@ -13,6 +14,22 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
   justify-content: center;
+}
+.projects-subtitle {
+  max-width: 650px;
+  margin: 10px auto 35px;
+  color: #a0a0a0;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.projects-category-title {
+  text-align: left;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #ffffff;
+  border-left: 4px solid #D083A0;
+  padding-left: 15px;
 }
 
 /* Card Style */
@@ -180,5 +197,35 @@ body.light-mode .tech-tag {
   body.light-mode .btn-demo {
     background: #d083a1d2;
     color: #000;
+  }
+}
+/* FIGMA SECTION */
+.figma-title {
+  margin-top: 70px;
+}
+
+.figma-card {
+  border-color: rgba(208, 131, 160, 0.35);
+}
+
+.figma-card .project-img-wrapper {
+  height: 260px;
+}
+
+.figma-card .project-img {
+  object-fit: cover;
+}
+
+.figma-card:hover {
+  box-shadow: 0 15px 35px rgba(208, 131, 160, 0.18);
+}
+
+body.light-mode .projects-category-title {
+  color: #111;
+}
+
+@media (max-width: 768px) {
+  .figma-card .project-img-wrapper {
+    height: 220px;
   }
 }

@@ -38,13 +38,16 @@ function Skills() {
         { name: "Figma", icon: <SiFigma /> },
         { name: "Vue.js", icon: <SiVuedotjs /> },
         { name: "Tailwind CSS", icon: <SiTailwindcss /> },
-
+    { name: "Next.js", icon: <span className="custom-tech-icon">N</span> },
+{ name: "Frappe", icon: <span className="custom-tech-icon">F</span> },
+{ name: "ERPNext", icon: <span className="custom-tech-icon">ERP</span> },
     ];
     const tools = [
         { name: "VS Code", icon: <DiVisualstudio /> },
         { name: "Git", icon: <SiGit /> },
         { name: "Postman", icon: <SiPostman /> },
         { name: "Linux", icon: <SiLinux /> },
+        { name: "Figma", icon: <SiFigma /> },
     ];
 
     return (
@@ -70,6 +73,7 @@ function Skills() {
                 </h2>
 
                 <div className="tech-grid">
+              
                     {tools.map((tool, index) => (
                         <div key={index} className="tech-card">
                             <span className="tech-icon">{tool.icon}</span>

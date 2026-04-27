@@ -1,5 +1,6 @@
 .about-section {
   padding: 100px 20px;
+
   overflow: hidden;
 }
 
@@ -23,8 +24,8 @@
 }
 
 .img-card {
-  width: 350px;
-  height: 350px;
+  width: 430px;
+  height: 430px;
   border-radius: 50%;
   padding: 5px;
   box-shadow: 0 0 30px rgba(208, 131, 160, 0.3);

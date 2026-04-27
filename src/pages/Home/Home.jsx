@@ -22,7 +22,10 @@ function Home() {
                             <span className="stroke-text">DEVELOPER</span>
                         </h1>
                     </Sparkles>
-
+                    <h3 className="hero-subtitle">
+                        Je conçois et développe des interfaces web modernes, élégantes et professionnelles.
+                     </h3>
+      
                     {/* Subtitle */}
                     {/* <h3 className="hero-subtitle">
                         & Computer Architect ("inchalaah")
@@ -30,6 +33,7 @@ function Home() {
                 </div>
 
                 {/* RIGHT SIDE: */}
+                
                 <div className="home-cloud-container">
                     <IconCloud />
                 </div>

@@ -1,5 +1,6 @@
 .skills-section {
     padding: 80px 20px;
+      background: linear-gradient(90deg,#82c3ec1e,#000000,#00000041,#82c3ec23);
 }
 
 .skiils-container {
@@ -78,4 +79,16 @@
     .tech-name {
         font-size: 0.9rem;
     }
+}
+.custom-tech-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+   border: 2px solid rgba(208, 131, 160, 0.5);
+  color: #D083A0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
 }
