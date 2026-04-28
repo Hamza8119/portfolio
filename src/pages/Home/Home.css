@@ -1,3 +1,82 @@
+/* Language Switcher */
+.lang-switcher {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  z-index: 100;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(208, 131, 160, 0.1);
+  border: 1px solid rgba(208, 131, 160, 0.3);
+  color: #fff;
+  padding: 7px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.lang-btn:hover {
+  background: rgba(208, 131, 160, 0.2);
+  border-color: rgba(208, 131, 160, 0.6);
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: #111;
+  border: 1px solid rgba(208, 131, 160, 0.25);
+  border-radius: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+  min-width: 130px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.15s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lang-option {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #ccc;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  text-align: left;
+  transition: background 0.15s, color 0.15s;
+}
+
+.lang-option:hover {
+  background: rgba(208, 131, 160, 0.15);
+  color: #fff;
+}
+
+.lang-option.active {
+  color: #D083A0;
+  font-weight: 600;
+}
+
+/* ======================== */
 .home-section {
   position: relative;
   width: 100%;
@@ -8,7 +87,7 @@
   padding: 10px 50px;
   overflow: hidden;
   background: #050505;
-  background: linear-gradient(10deg,#000000, #d083a124,#000000);
+  background: linear-gradient(10deg, #000000, #d083a124, #000000);
 }
 
 .home-section::before {
@@ -19,12 +98,10 @@
   right: -290px;
   top: 0%;
   transform: translateY(-50%);
-  background: radial-gradient(
-    circle,
-    rgba(208, 131, 160, 0.35) 0%,
-    rgba(208, 131, 160, 0.12) 35%,
-    transparent 70%
-  );
+  background: radial-gradient(circle,
+      rgba(208, 131, 160, 0.35) 0%,
+      rgba(208, 131, 160, 0.12) 35%,
+      transparent 70%);
   filter: blur(20px);
   z-index: 1;
 }
@@ -36,12 +113,10 @@
   height: 450px;
   left: -160px;
   bottom: -200px;
-  background: radial-gradient(
-    circle,
-  rgba(208, 131, 160, 0.35) 0%,
-    rgba(208, 131, 160, 0.12) 35%,
-    transparent 70%
-  );
+  background: radial-gradient(circle,
+      rgba(208, 131, 160, 0.35) 0%,
+      rgba(208, 131, 160, 0.12) 35%,
+      transparent 70%);
   filter: blur(0px);
   z-index: 1;
 }
@@ -64,7 +139,9 @@
 }
 
 .location-badge {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   font-size: 0.7rem;
   font-weight: 600;
   background: rgba(208, 131, 160, 0.1);
@@ -72,6 +149,7 @@
   border-radius: 20px;
   margin-bottom: 10px;
   border: 1px solid rgba(208, 131, 160, 0.2);
+  color: #D083A0;
 }
 
 .greeting {
@@ -116,6 +194,7 @@
   animation: wave-anim 2s infinite;
   transform-origin: 70% 70%;
 }
+
 .hero-subtitle {
   font-size: 1.25rem;
   color: #94a3b8;
@@ -125,6 +204,7 @@
   margin-top: 15px;
   margin-bottom: 25px;
 }
+
 @media (max-width: 968px) {
   .hero-subtitle {
     font-size: 1rem;
@@ -263,4 +343,38 @@
   .wave {
     font-size: 1rem;
   }
+}
+
+/* CV Download Button */
+.btn-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 2px solid #D083A0;
+  color: #D083A0;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background 0.25s, color 0.25s, transform 0.2s;
+}
+
+.btn-cv:hover {
+  background: #D083A0;
+  color: #0a0a0a;
+  transform: translateY(-2px);
+}
+
+body.light-mode .btn-cv {
+  border-color: #a8365a;
+  color: #a8365a;
+}
+
+body.light-mode .btn-cv:hover {
+  background: #a8365a;
+  color: #fff;
 }

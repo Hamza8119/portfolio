@@ -72,3 +72,30 @@
 .menu-link:hover {
   background-color: #ffffff10;
 }
+
+/* Nav Logo */
+.nav-logo {
+  position: fixed;
+  top: 14px;
+  left: 24px;
+  z-index: 2000;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  font-family: 'Poppins', sans-serif;
+  transition: opacity 0.2s;
+}
+
+.nav-logo span {
+  color: #D083A0;
+}
+
+.nav-logo:hover {
+  opacity: 0.85;
+}
+
+body.light-mode .nav-logo {
+  color: #1e293b;
+}

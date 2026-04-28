@@ -1,39 +1,38 @@
+import { MapPin } from "lucide-react";
 import IconCloud from "../../components/IconCloud";
 import Sparkles from "../../components/Sparkles/Sparkles";
+import { useLang } from "../../context/LanguageContext";
 import "./Home.css";
 
 function Home() {
+    const { t, isRTL } = useLang();
+
     return (
         <section className="home-section" id="home">
             <div className="home-content">
-                {/* LEFT SIDE: */}
-                <div className="home-header">
-                    <div className="location-badge">
-                        📍 Morocco
-                    </div>
+                {/* LEFT SIDE */}
+                <div className="home-header" dir={isRTL ? "rtl" : "ltr"}>
+                    <div className="location-badge"><MapPin size={13} /> {t.location}</div>
 
                     <h2 className="greeting">
-                        Hi, I'm HAMZA <span className="wave">👋🏻</span>
+                        {t.greeting} <span className="wave">👋🏻</span>
                     </h2>
 
                     <Sparkles minSize={30} maxSize={70}>
                         <h1 className="hero-title-large">
-                            FULLSTACK<br />
-                            <span className="stroke-text">DEVELOPER</span>
+                            {t.heroTitle}<br />
+                            <span className="stroke-text">{t.heroTitleStroke}</span>
                         </h1>
                     </Sparkles>
-                    <h3 className="hero-subtitle">
-                        Je conçois et développe des interfaces web modernes, élégantes et professionnelles.
-                     </h3>
-      
-                    {/* Subtitle */}
-                    {/* <h3 className="hero-subtitle">
-                        & Computer Architect ("inchalaah")
-                    </h3> */}
+
+                    <h3 className="hero-subtitle">{t.subtitle}</h3>
+
+                    <a href="/cv-hamza-ibourk.pdf" download className="btn-cv" data-aos="fade-up" data-aos-delay="300">
+                        ⬇ {t.downloadCV}
+                    </a>
                 </div>
 
-                {/* RIGHT SIDE: */}
-                
+                {/* RIGHT SIDE */}
                 <div className="home-cloud-container">
                     <IconCloud />
                 </div>

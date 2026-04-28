@@ -1,28 +1,20 @@
 import React, { useState } from 'react';
-import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import { useLang } from '../../context/LanguageContext';
 import './Burger.css';
 
 const Burger = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => setIsOpen(!isOpen);
-
-  const links = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Education", href: "#education" },
-    { name: "Experience", href: "#experience" },
-    { name: "Certificate", href: "#certificate" },
-
-  ];
+  const { t } = useLang();
 
   return (
     <>
-      <button 
-        className={`burger-btn ${isOpen ? 'active' : ''}`} 
-        onClick={toggleMenu}
+      {/* Logo top-left */}
+      <a href="#home" className="nav-logo">Hamza<span>.</span></a>
+
+      <button
+        className={`burger-btn ${isOpen ? 'active' : ''}`}
+        onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle Menu"
       >
         {isOpen ? <X size={25} /> : <Menu size={25} />}
@@ -30,10 +22,10 @@ const Burger = () => {
 
       <div className={`menu-overlay ${isOpen ? 'open' : ''}`}>
         <nav className="menu-nav">
-          {links.map((link, index) => (
-            <a 
-              key={index} 
-              href={link.href} 
+          {t.navLinks.map((link, index) => (
+            <a
+              key={index}
+              href={link.href}
               className="menu-link"
               onClick={() => setIsOpen(false)}
             >

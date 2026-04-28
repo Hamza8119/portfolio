@@ -26,4 +26,456 @@ body {
 body.light-mode {
   background-color: #f8fafc;
   color: #1e293b;
+  --primary: #a8365a;
+  --text: #1e293b;
+  --text-muted: #475569;
+  --card-bg: rgba(0, 0, 0, 0.04);
+}
+
+/* Force primary color usage in light mode */
+body.light-mode .text-primary,
+body.light-mode span.text-primary {
+  color: #a8365a !important;
+}
+
+body.light-mode .stroke-text {
+  -webkit-text-stroke-color: #a8365a !important;
+}
+
+body.light-mode .lang-option.active {
+  color: #a8365a;
+}
+
+body.light-mode .lang-btn {
+  color: #1e293b;
+  background: rgba(168, 54, 90, 0.08);
+  border-color: rgba(168, 54, 90, 0.3);
+}
+
+body.light-mode .lang-dropdown {
+  background: #fff;
+  border-color: rgba(168, 54, 90, 0.25);
+}
+
+body.light-mode .lang-option {
+  color: #1e293b;
+}
+
+body.light-mode .lang-option:hover {
+  background: rgba(168, 54, 90, 0.08);
+  color: #a8365a;
+}
+
+.lang-switcher-global {
+  position: fixed;
+  top: 18px;
+  right: 72px;
+  z-index: 9999;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(208, 131, 160, 0.1);
+  border: 1px solid rgba(208, 131, 160, 0.3);
+  color: #fff;
+  padding: 7px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.2s, border-color 0.2s;
+  backdrop-filter: blur(10px);
+}
+
+.lang-btn:hover {
+  background: rgba(208, 131, 160, 0.22);
+  border-color: rgba(208, 131, 160, 0.6);
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: #111;
+  border: 1px solid rgba(208, 131, 160, 0.25);
+  border-radius: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+  min-width: 130px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  animation: langFadeIn 0.15s ease;
+}
+
+@keyframes langFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lang-option {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #ccc;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  transition: background 0.15s, color 0.15s;
+}
+
+.lang-option:hover {
+  background: rgba(208, 131, 160, 0.15);
+  color: #fff;
+}
+
+.lang-option.active {
+  color: #D083A0;
+  font-weight: 600;
+}
+
+body.light-mode .lang-btn {
+  color: #1e293b;
+  background: rgba(208, 131, 160, 0.12);
+}
+
+body.light-mode .lang-dropdown {
+  background: #fff;
+  border-color: rgba(208, 131, 160, 0.3);
+}
+
+body.light-mode .lang-option {
+  color: #1e293b;
+}
+
+/* Light mode — global accent overrides */
+body.light-mode .nav-logo span,
+body.light-mode .footer-logo span {
+  color: #a8365a;
+}
+
+body.light-mode .highlight-link {
+  color: #a8365a;
+}
+
+body.light-mode .highlight-link:hover {
+  color: #7d2843;
+}
+
+body.light-mode .btn-submit,
+body.light-mode .btn-email {
+  background: #a8365a;
+  color: #fff;
+}
+
+body.light-mode .btn-submit:hover,
+body.light-mode .btn-email:hover {
+  background: #7d2843;
+}
+
+body.light-mode .contact-qr svg {
+  color: #a8365a;
+}
+
+body.light-mode .footer-email,
+body.light-mode .footer-col a:hover,
+body.light-mode .footer-socials a:hover {
+  color: #a8365a;
+}
+
+/* ============================================================
+   COMPREHENSIVE LIGHT MODE OVERRIDES
+   ============================================================ */
+
+/* ── Backgrounds ── */
+body.light-mode .home-section {
+  background: #f0f4f8;
+  background: linear-gradient(10deg, #f0f4f8, #f9e8ef, #f0f4f8);
+}
+
+body.light-mode .home-section::before,
+body.light-mode .home-section::after {
+  background: radial-gradient(circle, rgba(168, 54, 90, 0.12) 0%, transparent 70%);
+}
+
+body.light-mode .skills-section {
+  background: linear-gradient(90deg, #e8f0fe22, #f8fafc, #e8f0fe22);
+}
+
+body.light-mode .education-section {
+  background: linear-gradient(50deg, #f8fafc, #fce8ef44, #f8fafc);
+}
+
+body.light-mode .experience-section {
+  background: linear-gradient(90deg, #f8fafc, #fce8ef44, #f8fafc);
+}
+
+body.light-mode .projects-section {
+  background: linear-gradient(-20deg, #f8fafc, #e8f0fe33, #f8fafc);
+}
+
+body.light-mode .contact-section {
+  background: #f8fafc;
+}
+
+body.light-mode .contact-section::before {
+  background: radial-gradient(circle, rgba(168, 54, 90, 0.08) 0%, transparent 70%);
+}
+
+body.light-mode .about-section {
+  background: #f8fafc;
+}
+
+/* ── Primary color everywhere ── */
+body.light-mode .text-primary {
+  color: #a8365a !important;
+}
+
+body.light-mode .stroke-text {
+  -webkit-text-stroke-color: #a8365a !important;
+}
+
+body.light-mode .section-title .text-primary,
+body.light-mode h1 .text-primary,
+body.light-mode h2 .text-primary,
+body.light-mode h3 .text-primary {
+  color: #a8365a !important;
+}
+
+/* ── Timeline (Education & Experience) ── */
+body.light-mode .timeline-dot {
+  background-color: #a8365a;
+  border-color: #f8fafc;
+  box-shadow: 0 0 10px rgba(168, 54, 90, 0.3);
+}
+
+body.light-mode .timeline-content {
+  border-color: rgba(0, 0, 0, 0.1);
+  background: #fff;
+  color: #1e293b;
+}
+
+body.light-mode .timeline-content:hover {
+  border-color: #a8365a;
+  background: #fff5f8;
+}
+
+body.light-mode .timeline-date {
+  color: #a8365a;
+}
+
+body.light-mode .timeline-title {
+  color: #1e293b;
+}
+
+body.light-mode .timeline-school {
+  color: #475569;
+}
+
+body.light-mode .timeline-description {
+  color: #475569;
+}
+
+/* ── Skills cards ── */
+body.light-mode .tech-card {
+  background: #fff;
+  border-color: rgba(0, 0, 0, 0.08);
+  color: #1e293b;
+}
+
+body.light-mode .tech-card:hover {
+  border-color: #a8365a;
+  background: #fff5f8;
+}
+
+body.light-mode .tech-icon {
+  color: #a8365a;
+}
+
+body.light-mode .custom-tech-icon {
+  color: #a8365a;
+  border-color: rgba(168, 54, 90, 0.4);
+}
+
+/* ── Projects ── */
+body.light-mode .project-card {
+  background: #fff;
+}
+
+body.light-mode .project-title {
+  color: #1e293b;
+}
+
+body.light-mode .project-desc {
+  color: #475569;
+}
+
+body.light-mode .btn-overlay {
+  background-color: #a8365a;
+  color: #fff;
+}
+
+body.light-mode .btn-github {
+  color: #1e293b;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+body.light-mode .btn-demo {
+  background: #a8365a;
+  color: #fff;
+}
+
+body.light-mode .projects-category-title {
+  color: #1e293b;
+  border-color: #a8365a;
+}
+
+body.light-mode .projects-subtitle {
+  color: #475569;
+}
+
+/* ── Contact ── */
+body.light-mode .contact-eyebrow {
+  color: #a8365a;
+}
+
+body.light-mode .contact-card {
+  background: #fff;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .contact-card-title {
+  color: #1e293b;
+}
+
+body.light-mode .contact-link-item svg {
+  color: #a8365a;
+}
+
+body.light-mode .contact-link-item:hover {
+  color: #a8365a;
+  border-color: rgba(168, 54, 90, 0.3);
+  background: rgba(168, 54, 90, 0.05);
+}
+
+body.light-mode .contact-email-box {
+  background: rgba(168, 54, 90, 0.05);
+  border-color: rgba(168, 54, 90, 0.2);
+}
+
+body.light-mode .email-label {
+  color: #a8365a;
+}
+
+body.light-mode .contact-qr {
+  background: rgba(168, 54, 90, 0.04);
+  border-color: rgba(168, 54, 90, 0.15);
+}
+
+body.light-mode .qr-label {
+  color: #64748b;
+}
+
+/* ── Burger / Nav ── */
+body.light-mode .burger-btn {
+  background: #fff;
+  border-color: rgba(0, 0, 0, 0.12);
+  color: #1e293b;
+}
+
+body.light-mode .burger-btn:hover {
+  background: #a8365a;
+  color: #fff;
+}
+
+body.light-mode .menu-overlay {
+  background: #fff;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .menu-link {
+  color: #a8365a;
+}
+
+body.light-mode .menu-link:hover {
+  background-color: rgba(168, 54, 90, 0.06);
+}
+
+/* ── Footer ── */
+body.light-mode .footer {
+  background: #f1f5f9;
+  border-top-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .footer-logo {
+  color: #1e293b;
+}
+
+body.light-mode .footer-logo span {
+  color: #a8365a;
+}
+
+body.light-mode .footer-email {
+  color: #a8365a;
+}
+
+body.light-mode .footer-col h4,
+body.light-mode .footer-social-col h4 {
+  color: #1e293b;
+}
+
+body.light-mode .footer-col a {
+  color: #64748b;
+}
+
+body.light-mode .footer-col a:hover {
+  color: #a8365a;
+}
+
+body.light-mode .footer-socials a {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #64748b;
+}
+
+body.light-mode .footer-socials a:hover {
+  background: rgba(168, 54, 90, 0.1);
+  border-color: rgba(168, 54, 90, 0.3);
+  color: #a8365a;
+}
+
+body.light-mode .footer-bottom {
+  border-top-color: rgba(0, 0, 0, 0.08);
+  color: #94a3b8;
+}
+
+/* ── Home badges & misc ── */
+body.light-mode .location-badge {
+  background: rgba(168, 54, 90, 0.08);
+  border-color: rgba(168, 54, 90, 0.2);
+  color: #1e293b;
+}
+
+body.light-mode .greeting {
+  color: #1e293b;
+}
+
+body.light-mode .hero-subtitle {
+  color: #475569;
+}
+
+body.light-mode .hero-title-large {
+  color: #1e293b;
 }

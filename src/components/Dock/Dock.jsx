@@ -1,85 +1,39 @@
-import React, { useState } from 'react';
-import { Github, Linkedin, Mail, Sun, Moon , Instagram  , Briefcase } from 'lucide-react';
+import { useState } from 'react';
+import { Github, Linkedin, Mail, Sun, Moon, Instagram, Briefcase } from 'lucide-react';
+import { useLang } from '../../context/LanguageContext';
 import './Dock.css';
 
 const Dock = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
+  const { t } = useLang();
 
-  // Function Theme
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
     document.body.classList.toggle('light-mode');
   };
 
   const socials = [
-    {
-      id: "github",
-      icon: <Github size={22} />,
-      label: "GitHub",
-      url: "https://github.com/Hamza8119"
-    },
-    {
-      id: "linkedin",
-      icon: <Linkedin size={22} />,
-      label: "LinkedIn",
-      url: "https://www.linkedin.com/in/hamza-ibourk-b8569833a/"
-    },
-    {
-      id: "email",
-      icon: <Mail size={22} />,
-      label: "Email",
-      url: "mailto:hamzaibourk2005@gmail.com"
-    },
-     {
-    id: "instagram",
-    icon: <Instagram size={22} />,
-    label: "Instagram",
-    url: "https://www.instagram.com/code_.vin?igsh=MXhqaWp5YXMwN2d1bQ%3D%3D&utm_source=qr"
-  },
- 
-    {
-      id: "behance",
-      icon: <Briefcase size={22} />,
-      label: "Behance",
-      url: "https://www.behance.net/hamzaibourk1"
-    },
-
+    { id: "github", icon: <Github size={22} />, label: "GitHub", url: "https://github.com/Hamza8119" },
+    { id: "linkedin", icon: <Linkedin size={22} />, label: "LinkedIn", url: "https://www.linkedin.com/in/hamza-ibourk-b8569833a/" },
+    { id: "email", icon: <Mail size={22} />, label: "Email", url: "mailto:hamzaibourk2005@gmail.com" },
+    { id: "instagram", icon: <Instagram size={22} />, label: "Instagram", url: "https://www.instagram.com/code_.vin?igsh=MXhqaWp5YXMwN2d1bQ%3D%3D&utm_source=qr" },
+    { id: "behance", icon: <Briefcase size={22} />, label: "Behance", url: "https://www.behance.net/hamzaibourk1" },
   ];
 
   return (
     <div className="dock-container">
       <div className="dock-bar">
-
-        {/* Social Icons */}
         {socials.map((item) => (
-          <a
-            key={item.id}
-            href={item.url}
-            target="_blank"
-            rel="noreferrer"
-            className="dock-item"
-            aria-label={item.label}
-          >
+          <a key={item.id} href={item.url} target="_blank" rel="noreferrer" className="dock-item" aria-label={item.label}>
             {item.icon}
             <span className="dock-tooltip">{item.label}</span>
           </a>
         ))}
-
-        {/* Separator (خط فاصل) */}
         <div className="dock-separator"></div>
-
-        {/*Mode Toggle */}
-        <button
-          onClick={toggleTheme}
-          className="dock-item"
-          aria-label="Toggle Theme"
-        >
+        <button onClick={toggleTheme} className="dock-item" aria-label="Toggle Theme">
           {isDarkMode ? <Sun size={22} /> : <Moon size={22} />}
-          <span className="dock-tooltip">
-            {isDarkMode ? "Light Mode" : "Dark Mode"}
-          </span>
+          <span className="dock-tooltip">{isDarkMode ? t.lightMode : t.darkMode}</span>
         </button>
-
       </div>
     </div>
   );
