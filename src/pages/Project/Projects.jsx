@@ -7,7 +7,7 @@ import DarDigitalImg from "../../assets/Projects/DarDigital.png";
 import BCH from "../../assets/Projects/BCH.png";
 import CerRental from "../../assets/Projects/CerRental.png";
 import ElectroTurbo from "../../assets/Projects/électrisité.png";
-import ecom from "../../assets/Projects/Ecom.jpeg";
+import ecom from "../../assets/Projects/ecom.jpeg";
 import hackathon from "../../assets/Projects/hackathon.png";
 import figma from "../../assets/Projects/FIGMA1.png";
 import portfolio2 from "../../assets/Projects/portfolio2.png";
