@@ -136,7 +136,7 @@ export const translations = {
             navEducation: "Education",
             navExperience: "Experience",
             navContact: "Contact",
-            copyright: "© 2025 Hamza Ibourk. All rights reserved.",
+            copyright: "© 2026 Hamza Ibourk. All rights reserved.",
             builtWith: "Built with React & ❤️",
         },
         certificates: {
@@ -276,7 +276,7 @@ export const translations = {
             navEducation: "Formation",
             navExperience: "Expérience",
             navContact: "Contact",
-            copyright: "© 2025 Hamza Ibourk. Tous droits réservés.",
+            copyright: "© 2026 Hamza Ibourk. Tous droits réservés.",
             builtWith: "Créé avec React & ❤️",
         },
         certificates: {
@@ -416,7 +416,7 @@ export const translations = {
             navEducation: "التعليم",
             navExperience: "الخبرة",
             navContact: "تواصل",
-            copyright: "© 2025 حمزة إبورك. جميع الحقوق محفوظة.",
+            copyright: "© 2026 حمزة إبورك. جميع الحقوق محفوظة.",
             builtWith: "مبني بـ React و ❤️",
         },
         certificates: {
